@@ -1,0 +1,207 @@
+/* O conteúdo de toda a página fica dentro do tamanho definido */
+* {
+    box-sizing: border-box;
+}
+
+.background {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 5fr 5fr 40fr 5fr 5fr;
+    grid-template-rows: 2fr 1fr 30fr 1.2fr;
+}
+
+.conteudo{
+    grid-column-start: 3;
+}
+
+.menuPrincipal{
+    grid-row-start: 1;
+    font-size: 1.5rem;
+    height: 10vh;
+    padding-top: 3vh;
+}
+
+.listaMenuPrincipal{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    overflow-wrap: break-word;
+    list-style-type: none; /* Remove o marcador */
+    height: 5vh;
+    align-items: center;
+}
+
+.itemMenu {
+    height: 100%;
+    margin: 0;
+    width: 25%;
+    text-align: center;
+}
+
+.semLink{
+    /* flex 1 para fazer o <a> preencher todo o <li> 
+    e ajustes para deixar o texto alinhado na vertical e horizontal */
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#594e41;
+    color: white;
+    border: solid;
+    border-radius: 10px;
+    border-color: #594e41;
+}
+
+.comLink a{
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #594e41;
+    border-color: white;
+    height: 100%;
+
+}
+
+.comLink a:link{
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: white;
+    color: #73675A;
+    border-color: #dbdbce;
+    text-decoration: none;
+}
+
+.comLink a:visited{
+    background-color: white;
+    color: #73675A;
+    border-color: #dbdbce;
+    text-decoration: underline;
+}
+
+.comLink a:hover{
+    background-color: #dbdbce;
+    color: #262621;
+    border-color: #594e41;
+    text-decoration: underline;
+    border: solid;
+    border-radius: 10px;
+    border-color: #594e41;
+}
+
+.comLink a:ative{
+    background-color: #594e41;
+    color: white;
+}
+
+.tituloPagina{
+    margin: 0;
+    padding: 0;
+    grid-row-start: 2;
+    height: 100%;
+    background-color: #594e41;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+    border: solid;
+    border-radius: 10px;
+    border-color: #594e41;
+}
+
+.corpoTexto{
+    grid-row-start: 3;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding-top: 1vh;
+    text-align: justify;
+    border-style: solid;
+    border: #262621;
+    border-radius:20px;
+    border-width: 10px;
+    background-color: #dbdbce;
+    height: auto;
+}
+
+.paragrafoCorpoTexto{
+    margin: 5vh;
+    padding: 3vh;
+    border-style: solid;
+    border: #262621;
+    border-radius:20px;
+    border-width: 10px;
+
+    background-color: white;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.areaRodape{
+    grid-row-start: 4;
+    background-color: #594e41;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.linkPortifolio a:link{
+    color: #73675A;
+    text-decoration: underline;
+}
+
+.linkPortifolio a:visited{
+    text-decoration: underline;
+}
+
+.linkPortifolio a:hover{
+    background-color: #dbdbce;
+    color: #262621;
+    text-decoration: underline;
+}
+
+.linkPortifolio a:ative{
+    color: #dbdbce;
+}
+
+.formularioCampo{
+    display: inline-block;
+    width: 50vh;
+    height: 3vh;
+}
+
+.formularioCampoMensagem{
+    font-size: 1.2rem;
+    display: inline-block;
+    width: 90vh;
+    height: 15vh;
+}
+
+.formularioBotao{
+    cursor: pointer;  /* Mudar o ícone igual a link */
+    background-color:#dbdbce;
+    color:#262621;
+    font-size: 1.2rem;
+    padding: 5px;
+
+    /* Centralizar botão*/
+    display: block;
+    margin: 0 auto;
+
+}
+
+.formularioBotao:hover{
+    background-color: #594e41;
+    color: white;
+}
